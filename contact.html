@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata First -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - 805 Realty Co</title>
+    <!-- Preload -->
+    <link rel="preload" href="components/header.js" as="script">
+    <!-- CSS + Fonts -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Raleway&family=Marck+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/headerNavFooter.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Canonical Url-->
+    <link rel="canonical" content="https://805realtyco.com/contact"/>
+    <!-- Metadata Other -->
+    <meta name="format-detection" content="telephone=no" />
+    <meta property="og:description" content="Welcome to my contact page. Feel free to message me using any one of the links provided below. I look forward to hearing from you soon!">
+    <!-- Social Media Metadata-->
+    <meta name="twitter:title" content="Contact">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:title" content="Contact">
+    <meta property="og:description" content="Welcome to my contact page. Feel free to message me using any one of the links provided below. I look forward to hearing from you soon!">
+    <meta property="og:image" content="https://805realtyco.com/Images/beach-house.webp">
+    <meta property="og:url" content="https://805realtyco.com/contact"/>
+    <!-- Components -->
+    <script src="components/header.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="text/javascript" defer></script>
+    <!-- Scripts -->
+    <script src="scripts/modal.js" type="text/javascript" defer ></script>
+</head>
+<body>
+    <header-component></header-component>
+    <main>
+        <section class="container">
+            <section class="container-header">
+                <h1>Let's Get in Touch!</h1>
+            </section>
+                <div class="contact-info">
+                    <div class="contact-left">
+                        <h2>Evhan Blasingame</h2>
+                        <div class="h3f">
+                            <div class="h3f-b">
+                                <h3><span>Realtor<br>DRE #NUMBER</span></h3>
+                            </div>
+                            <div class="h3f-b">
+                                <h3>Coast & County Brokers<br>847 Monterey St. #211 San Luis Obispo, CA <span class="smb">(Click <a href="contact.html#map">Here</a> for Map)</span></h3>
+                            </div>
+                            <div class="h3f-b2">
+                                <h3 class="contactpg-skype"><a href="">Phone: 111-111-1111</a></h3>
+                                <h3 class="contactpg-phone"><a href="">Phone: 111-111-1111</a></h3>
+                                <h3><a href="">Email: someone@gmail.com</a></h3>
+                            </div>
+                        </div>
+                        <div id="links-social">
+                            <ul>
+                                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <div class="contact-image">
+                            <div class="contact-image-quote">
+                                <h3>Hope to hear from you soon!</h3>
+                            </div>
+                            <img class="contact-image-img" src="Images/contact.png" alt="contact us">
+                            <img class="contact-tablet" src="Images/contact-tablet.png" alt="contact us">
+                            <div id="pop-up-contact">
+                                <button id="modal-open">Drop Us a Line!</button>
+                                <div id="contact-modal" class="modal">
+                                    <div id="modal-content">
+                                        <div id="modal-header">
+                                            <span class="close-modal">&times;</span>
+                                            <h2>805 Realty Co &copy;</h2>
+                                        </div>
+                                        <div id="modal-body">
+                                            <h3>Send Us a Message</h3>
+                                            <form action="contactform.php" method="POST">
+                                                <div class="form-group">
+                                                    <label for="name">Name</label>
+                                                    <input type="text" name="name">  
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="email">Email</label>
+                                                    <input type="email" name="email">  
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="phone">Phone</label>
+                                                    <input type="tel" name="phone">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="message">Message</label>
+                                                    <textarea name="message"></textarea>
+                                                </div>
+                                                <input type="submit" name="send" value="Thank You">
+                                            </form>
+                                        </div>
+                                        <div id="modal-footer">
+                                            <h3>805 Realty Co &copy; 2021</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <script src="modal.js"></script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-bottom">
+                    <div class="google-map">
+                        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3257.0197641689465!2d-120.66527208538872!3d35.280634859445904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80ecf103caba07b1%3A0xfe226aed1fc075b1!2sCoast%20%26%20County%20Brokers!5e0!3m2!1sen!2sjp!4v1633683108983!5m2!1sen!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>           
+        </section>       
+    </main>
+    <footer-component></footer-component>
+</body>
+</html>

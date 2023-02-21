@@ -1,0 +1,198 @@
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+@font-face {font-family: "Sansumi"; src: url("https://db.onlinewebfonts.com/t/821b59ec713618ba9319bfed2337519e.eot"); src: url("https:/db.onlinewebfonts.com/t/821b59ec713618ba9319bfed2337519e.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/821b59ec713618ba9319bfed2337519e.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/821b59ec713618ba9319bfed2337519e.woff") format("woff"), url("https://db.onlinewebfonts.com/t/821b59ec713618ba9319bfed2337519e.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/821b59ec713618ba9319bfed2337519e.svg#Sansumi") format("svg"); }
+
+html {
+    scroll-behavior: smooth;
+    line-height:1.5;
+}
+
+html, body {
+    min-height: 100vh;
+    position: relative;
+}
+
+
+body {
+    background-color: #dedede;
+    font-size: 8px;
+}
+
+main {
+    background-color: #f3f3f3;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-bottom: 12rem;
+}
+
+@media only screen and (max-width: 767px) {
+    main {
+        padding-bottom: 290px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    main {
+        padding-bottom: 490px;
+    }
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-align: center;
+    font-family: 'Sansumi', 'Raleway', sans-serif;
+}
+
+h2 {
+    font-size: 32px;
+    line-height: 64px;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 48px;
+}
+
+h4 {
+    font-size: 21px;
+    line-height: 32px;
+}
+
+p, ul li, label {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+@media only screen and (max-width: 576px) {
+    h1 {
+        font-size: 40px;
+    }
+}
+
+.container {
+    padding-top: 6rem;
+}
+
+.container-header {
+    padding-bottom: 4rem;
+}
+
+/*COLORS
+
+Blue- #0E84BF
+Blue2- #86ABDF
+Dark Blue- #145373
+
+Red- #DE2638
+Dark Red- #AB1D2B
+
+Lighter Gray- #EAEBF0
+Light Gray- #C1BEC6
+Light Gray- #C3CCD9
+Dark Grey- #565859
+
+
+Green- #52BF04
+
+*/
+
+
+/*THANKS*/
+
+.thanks {
+    margin: 0 82px;
+}
+
+.thanks-img {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    padding-bottom: 6rem;
+}
+
+.thanks-img img {
+    width: calc(100% - 164px);
+}
+
+.thanks-h2 h2 {
+    letter-spacing: 2px;
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    padding-bottom: 1rem;
+}
+
+.thanks-h2 {
+    margin: 0 82px;
+    padding-bottom: 6rem;
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+   .thanks-h2 {
+        margin: 0 4rem;
+    }
+
+   .wrapper-for-footer footer {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {   
+    .thanks-h2 {
+        margin: 0 82px;
+   }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+    .thanks {
+        margin: 0 2rem;
+    }
+
+    .thanks-h2 {
+        margin: 0 82px;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+    .thanks {
+        margin: 0 2rem;
+    }
+
+    .thanks-h2 {
+        margin: 0 2rem;
+    }
+
+    .thanks-img img {
+        width: calc(100% - 2rem);
+    }
+}
