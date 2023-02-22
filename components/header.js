@@ -39,9 +39,9 @@ class Header extends HTMLElement {
                             <li><a id="dropdown" class="dropbtn">SERVICES</a>
                                 <div id="myDropdown" class="dropdown-content">
                                     <ul>
-                                        <a href="services.html#selling"><li>Selling</li></a>
-                                        <a href="services.html#buying"><li>Buying</li></a>
-                                        <a href="services.html#loan"><li>Home Loan</li></a>
+                                        <li><a href="services.html#selling">Selling<a></li></a>
+                                        <li><a href="services.html#buying">Buying</a></li></a>
+                                        <li><a href="services.html#loan">Home Loan</a></li>
                                     </ul>
                                 </div>
                             </li>

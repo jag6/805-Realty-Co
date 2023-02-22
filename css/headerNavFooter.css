@@ -203,14 +203,6 @@ nav {
     margin-bottom: .5rem;
 }
 
-.line-bottom {
-    border-top: 1px solid #565859;
-    width: 200px;
-    left: 25px;
-    top: 96px;
-    position: absolute;
-}
-
 .dropdown-mc ul {
     display: flex;
     flex-direction: column;
@@ -219,12 +211,12 @@ nav {
 }
 
 .dropdown-mc ul li {
-    line-height: 32px;
+    line-height: 40px;
 }
 
 .dropdown-mc ul li a {
     display: block;
-    height: 32px;
+    height: 40px;
     font-style: italic;
     font-weight: bold;
 }
