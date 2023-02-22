@@ -131,7 +131,6 @@
 @media only screen and (orientation:portrait) and (max-width: 991px) {   
     .contact-info {
         flex-direction: column;
-        margin: 0 82px;
    }
 
     .contact-left, .contact-right {
@@ -177,14 +176,14 @@
 
 }
 
-@media only screen and (min-width: 0px) and (max-width: 576px) {
+@media only screen and (max-width: 576px) {
     .contact-info {
         flex-direction: column;
         margin: 0 2rem;
    }
 
     .container-header {
-       margin: 0 2rem;
+        margin: 0 2rem;
    }
 
     .contact-left, .contact-right {
