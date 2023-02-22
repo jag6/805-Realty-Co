@@ -38,6 +38,7 @@
     <meta property="og:url" content="https://805realtyco.com/contact"/>
     <!-- Components -->
     <script src="components/header.js" type="text/javascript" defer></script>
+    <script src="components/modal.js" type="text/javascript" defer></script>
     <script src="components/footer.js" type="text/javascript" defer></script>
     <!-- Scripts -->
     <script src="scripts/modal.js" type="text/javascript" defer ></script>
@@ -83,40 +84,7 @@
                             <img class="contact-tablet" src="Images/contact-tablet.png" alt="contact us">
                             <div id="pop-up-contact">
                                 <button id="modal-open">Drop Us a Line!</button>
-                                <div id="contact-modal" class="modal">
-                                    <div id="modal-content">
-                                        <div id="modal-header">
-                                            <span class="close-modal">&times;</span>
-                                            <h2>805 Realty Co &copy;</h2>
-                                        </div>
-                                        <div id="modal-body">
-                                            <h3>Send Us a Message</h3>
-                                            <form action="contactform.php" method="POST">
-                                                <div class="form-group">
-                                                    <label for="name">Name</label>
-                                                    <input type="text" name="name">  
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="email">Email</label>
-                                                    <input type="email" name="email">  
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="phone">Phone</label>
-                                                    <input type="tel" name="phone">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="message">Message</label>
-                                                    <textarea name="message"></textarea>
-                                                </div>
-                                                <input type="submit" name="send" value="Thank You">
-                                            </form>
-                                        </div>
-                                        <div id="modal-footer">
-                                            <h3>805 Realty Co &copy; 2021</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <script src="modal.js"></script>
+                                <modal-component></modal-component>
                             </div>
                         </div>
                     </div>
