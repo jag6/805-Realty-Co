@@ -8,12 +8,28 @@ class Footer extends HTMLElement {
                 <p>805 Realty Co &copy; 2022 <a class="footer-phone-dt" href="">111-111-1111</a><a class="footer-phone-m" href="">C: 111-111-1111</a><a class="footer-contact" href="contact.html">Contact Us</a><span class="footer-address">Coast & County Brokers 847 Monterey St. #211, San Luis Obispo, CA</span></p>
                 <p></p>
                 <p>DRE #2198934</p>
-                <div class="footer-images">
-                    <img class="footer-img1" src="Images/national-association-of-realtors-logo.png" alt="national association of realtors logo">
-                    <img class="footer-img2" src="Images/california-association-of-realtors-logo-vector.png" alt="california association of realtors logo vector">
-                    <img class="footer-img4" src="Images/CRMLS.png" alt="California Regional Multiple Listing Service">
-                    <img class="footer-img3" src="Images/Give-Back_SLO-Association-of-Realtors.jpg" alt="SLO association of realtors">
-                </div>
+                <ul class="footer-images">
+                    <li>
+                        <div>
+                            <img class="footer-img1" src="Images/national-association-of-realtors-logo.png" alt="national association of realtors logo">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img class="footer-img2" src="Images/california-association-of-realtors-logo-vector.png" alt="california association of realtors logo vector">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img class="footer-img4" src="Images/CRMLS.png" alt="California Regional Multiple Listing Service">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img class="footer-img3" src="Images/Give-Back_SLO-Association-of-Realtors.jpg" alt="SLO association of realtors">
+                        </div>
+                    </li>
+                </ul>
             </footer>
         `;
 

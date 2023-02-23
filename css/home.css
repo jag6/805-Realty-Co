@@ -94,42 +94,52 @@
     padding-bottom: 1rem;
 }
 
-.help-grid {
-    align-items: center;
-    vertical-align: middle;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 50px;
-}
-
 #help-header {
     font-style: italic;
     padding: 3rem 0;
 }
 
-.help-grid section {
-    background-color: #C1BEC6;
+.help-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px; 
+    align-items: center;
     vertical-align: middle;
+}
+
+.help-grid li {
+    list-style: none;
+}
+
+.help-grid li a {
+    width: 100%;
+    font-size: 24px;
+    line-height: 48px;
+    font-weight: 700;
+    background-color: #C1BEC6;
+    color: #000;
     text-align: center;
     padding: 2rem;
     border-radius: 1rem;
-    text-transform: uppercase;
-}
-
-.help-grid a {
-    color: #000;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    width: 100%;
 }
 
 
 @media only screen and (min-width: 1200px) {
-    .help-grid section:hover {
+    .help-grid li a:hover {
         transform: scale(1.04);
         transition: .3s;
         background-color: #565859;
         margin-top: -1rem;
     }
     
-    .help-grid section h3:hover {
+    .help-grid li a:hover {
         color: #fff;
         transition: .3s;
     }
@@ -172,7 +182,7 @@
 }
 
 
-/*Links*/
+/*Wonder Links*/
 
 .links-wrapper {
     padding: 4rem 0 3rem 0;
@@ -186,18 +196,18 @@
     padding-bottom: 2rem;
 }
 
-.thelinks {
+.wonder-links {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 50px;   
 }
 
-.thelinks a {
-    color: #fff;
-    text-align: center;
+.wonder-links li {
+    list-style: none;
 }
 
-.links-q  {
+.wonder-links li a {
+    color: #fff;
     text-align: center;
     background-color: #145373;
     display: flex;
@@ -209,11 +219,14 @@
     margin-bottom: 2rem;
     height: 7rem;
     width: 100%;
+    font-size: 21px;
+    line-height: 32px;
+    font-weight: 700;
 }
 
 
 @media only screen and (min-width: 1200px) {
-    .links-q:hover {
+    .wonder-links li a:hover {
         transform: scale(1.04);
         transition: .2s;
         background-color: #AB1D2B;
@@ -221,21 +234,21 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {   
-    .thelinks {
+    .wonder-links {
         column-gap: 20px;
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media only screen and (min-width: 577px) and (max-width: 767px) {
-    .thelinks {
+    .wonder-links {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 20px;
     }
 }
 
 @media only screen and (min-width: 0px) and (max-width: 576px) {
-    .thelinks {
+    .wonder-links {
         grid-template-columns: repeat(1, 1fr);
         column-gap: 20px;
     }
@@ -270,6 +283,18 @@
     font-size: 21px;
     line-height: 32px;
     margin-bottom: 2rem;
+}
+
+.testimonials p:first-of-type {
+    font-size: 24px;
+    line-height: 48px;
+    font-weight: 700;
+}
+
+.testimonials p:last-of-type {
+    font-size: 18px;
+    line-height: 32px;
+
 }
 
 @media only screen and (min-width: 0px) and (max-width: 576px) {

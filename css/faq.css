@@ -24,13 +24,14 @@
     list-style: none;
 }
 
+.faq-menu-body ul li a {
+    border-radius: 10px;
+}
+
 .faq-menu-body ul li a:hover {
     background-color: #AB1D2B;
-    border-radius: 10px;
     transform: scale(1.03);
-    transition: .3s;
-    margin-left: 1rem;
-    font-style: italic;
+    transition: .2s;
     color: #fff;
 }
 

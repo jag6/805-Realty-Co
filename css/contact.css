@@ -44,11 +44,11 @@
 .smb a {
     color: #52BF04;
     font-weight: 700;
+    border-bottom: 4px solid transparent;
 }
 
 .smb a:hover {
-    border-top: 2px solid #52BF04;
-    border-bottom: 2px solid #52BF04;
+    border-bottom: 4px solid #52BF04;
     transition: .3s;
 }
 
@@ -111,9 +111,8 @@
 @media only screen and (min-width: 1200px) {
     .h3f-b2 a:hover {
         font-weight: 900;
-        transition: .7s;
+        transition: .3s;
         margin-left: 1rem;
-        font-size: 27px;
         color: #565859;
     }
 }
