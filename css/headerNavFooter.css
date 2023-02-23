@@ -149,7 +149,7 @@ nav {
     margin: 0 auto;
     right: 0;
     cursor: pointer;
-    position: absolute;
+    position: fixed;
     height: 64px;
     width: 64px;
 }
@@ -241,10 +241,19 @@ nav {
 }
 
 @media only screen and (max-width: 1000px) {
-    header{
-        margin: 0;
+    header {
         background-color: #565859;
         height: 64px;
+        position: fixed;
+        top: 0;
+        z-index: 99999;
+        width: 100%;
+    }
+    html {
+        scroll-padding-top: 64px;
+    }
+    main {
+        padding-top: 64px;
     }
 
     .logo {
