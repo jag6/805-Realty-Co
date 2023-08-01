@@ -1,5 +1,7 @@
-class Modal extends HTMLElement {
-    connectedCallback() {
+customElements.define('modal-component', class extends HTMLElement {
+    constructor() {
+        super();
+        
         this.innerHTML = `
             <div id="contact-modal" class="modal">
                 <div id="modal-content">
@@ -36,6 +38,4 @@ class Modal extends HTMLElement {
             </div>
         `;
     }
-}
-
-customElements.define('modal-component', Modal);
+});

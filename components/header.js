@@ -1,5 +1,7 @@
-class Header extends HTMLElement {
-    connectedCallback() {
+customElements.define('header-component', class extends HTMLElement {
+    constructor() {
+        super();
+
         this.innerHTML = `
             <header>
                 <p>Evhan Blasingame</p>
@@ -138,6 +140,4 @@ class Header extends HTMLElement {
             }
         });
     }
-}
-
-customElements.define('header-component', Header); 
+});

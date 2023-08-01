@@ -1,5 +1,7 @@
-class Faq extends HTMLElement {
-    connectedCallback() {
+customElements.define('faq-component', class extends HTMLElement {
+    constructor() {
+        super();
+
         this.innerHTML = `
             <div class="faq-menu">
                 <div class="faq-menu-header"></div>
@@ -31,6 +33,4 @@ class Faq extends HTMLElement {
             </div>
         `;
     }
-}
-
-customElements.define('faq-component', Faq);
+});

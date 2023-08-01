@@ -1,1 +1,33 @@
+<IfModule mod_rewrite.c>
+    # Set HSTS env var only if HTTPS
+    RewriteCond %{HTTPS} on
+    RewriteRule ^ - [E=HSTS:1]
+
+    # Redirect HTTP to HTTPS on the same host
+    RewriteCond %{HTTPS} !=on
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+    # Redirect www to non-www (and HTTPS)
+    RewriteCond %{HTTP_HOST} ^www\.(.+?)\.?$ [NC]
+    RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
+
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME}.html -f
+    RewriteRule ^(.*)$ $1.html
+</IfModule>
+
 Error Document 404  https://jag6.github.io/805-realty-co/404.html
+
+<IfModule mod_headers.c>
+    Header set Content-Security-Policy: "default-src 'self'; font-src https://fonts.gstatic.com; style-src 'self' https://fonts.googleapis.com; script-src 'self'; frame-src 'self'; child-src 'none';
+
+    # Set HSTS header conditionally if request is over HTTPS only (based on HSTS env var)
+    Header set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" env=HSTS
+
+    Header set X-Frame-Options: DENY
+
+    Header set X-Content-Type-Options: nosniff
+
+    Header set Referrer-Policy: strict-origin-when-cross-origin
+</IfModule>

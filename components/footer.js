@@ -1,5 +1,7 @@
-class Footer extends HTMLElement {
-    connectedCallback() {
+customElements.define('footer-component', class extends HTMLElement {
+    constructor() {
+        super();
+        
         this.innerHTML = `
             <div id="top-btn" class="top-btn">
                 <i class="fas fa-chevron-up" title="Go to top"></i>
@@ -51,6 +53,4 @@ class Footer extends HTMLElement {
             });
         }
     }
-}
-
-customElements.define('footer-component', Footer);
+});
