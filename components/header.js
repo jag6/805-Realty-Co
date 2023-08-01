@@ -6,50 +6,50 @@ customElements.define('header-component', class extends HTMLElement {
             <header>
                 <p>Evhan Blasingame</p>
                 <div class="logo-container">
-                    <a href="index.html"><img class="logo" src="Images/805 Realty Co logo.svg" alt=""></a>
+                    <a href="/"><img class="logo" src="Images/805 Realty Co logo.svg" alt=""></a>
                 </div>
                 <div id="toggle-nav" class="btn-toggle-nav">
                     <i class="fas fa-bars"></i>
                 </div>
                 <nav id="nav-sidebar" class="nav-sidebar">
                     <ul>
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="/">HOME</a></li>
+                        <li><a href="/about">ABOUT</a></li>
                         <div class="nav-dd-services">
                             <li><a id="toggle-services" class="toggle-nav-sb">SERVICES</a>
                                 <div id="myDropdownM" class="dropdown-mc">
                                     <ul>
-                                        <li><a href="services.html#selling">Selling</a></li>
-                                        <li><a href="services.html#buying">Buying</a></li>
-                                        <li><a href="services.html#loan">Home Loan</a></li>
+                                        <li><a href="/services#selling">Selling</a></li>
+                                        <li><a href="/services#buying">Buying</a></li>
+                                        <li><a href="/services#loan">Home Loan</a></li>
                                     </ul>
                                     <div class="line-bottom"></div>
                                 </div>
                             </li> 
                         </div>  
-                        <li><a href="contact.html">CONTACT</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="/contact">CONTACT</a></li>
+                        <li><a href="/faq">FAQ</a></li>
                     </ul>
                 </nav>
             </header>
             <nav id="nav" class="nav">
                 <div class="nav-inner">
                     <ul class="nav-links">
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="/">HOME</a></li>
+                        <li><a href="/about">ABOUT</a></li>
                         <div class="dropdown">
                             <li><a id="dropdown" class="dropbtn">SERVICES</a>
                                 <div id="myDropdown" class="dropdown-content">
                                     <ul>
-                                        <li><a href="services.html#selling">Selling<a></li></a>
-                                        <li><a href="services.html#buying">Buying</a></li></a>
-                                        <li><a href="services.html#loan">Home Loan</a></li>
+                                        <li><a href="/services#selling">Selling<a></li></a>
+                                        <li><a href="/services#buying">Buying</a></li></a>
+                                        <li><a href="/services#loan">Home Loan</a></li>
                                     </ul>
                                 </div>
                             </li>
                         </div>
-                        <li><a href="contact.html">CONTACT</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="/contact">CONTACT</a></li>
+                        <li><a href="/faq">FAQ</a></li>
                     </ul>
                     <ul class="nav-soc-med">
                         <li>
