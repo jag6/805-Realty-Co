@@ -6,29 +6,29 @@ customElements.define('header-component', class extends HTMLElement {
             <header>
                 <p>Evhan Blasingame</p>
                 <div class="logo-container">
-                    <a href="/"><img class="logo" src="Images/805 Realty Co logo.svg" alt=""></a>
+                    <a href="/805-Realty-Co"><img class="logo" src="Images/805 Realty Co logo.svg" alt=""></a>
                 </div>
                 <div id="toggle-nav" class="btn-toggle-nav">
                     <i class="fas fa-bars"></i>
                 </div>
                 <nav id="nav-sidebar" class="nav-sidebar">
                     <ul>
-                        <li><a href="/">HOME</a></li>
-                        <li><a href="/about">ABOUT</a></li>
+                        <li><a href="/805-Realty-Co">HOME</a></li>
+                        <li><a href="/805-Realty-Co/about">ABOUT</a></li>
                         <div class="nav-dd-services">
                             <li><a id="toggle-services" class="toggle-nav-sb">SERVICES</a>
                                 <div id="myDropdownM" class="dropdown-mc">
                                     <ul>
-                                        <li><a href="/services#selling">Selling</a></li>
-                                        <li><a href="/services#buying">Buying</a></li>
-                                        <li><a href="/services#loan">Home Loan</a></li>
+                                        <li><a href="/805-Realty-Co/services#selling">Selling</a></li>
+                                        <li><a href="/805-Realty-Co/services#buying">Buying</a></li>
+                                        <li><a href="/805-Realty-Co/services#loan">Home Loan</a></li>
                                     </ul>
                                     <div class="line-bottom"></div>
                                 </div>
                             </li> 
                         </div>  
-                        <li><a href="/contact">CONTACT</a></li>
-                        <li><a href="/faq">FAQ</a></li>
+                        <li><a href="/805-Realty-Co/contact">CONTACT</a></li>
+                        <li><a href="/805-Realty-Co/faq">FAQ</a></li>
                     </ul>
                 </nav>
             </header>
@@ -36,20 +36,20 @@ customElements.define('header-component', class extends HTMLElement {
                 <div class="nav-inner">
                     <ul class="nav-links">
                         <li><a href="/">HOME</a></li>
-                        <li><a href="/about">ABOUT</a></li>
+                        <li><a href="/805-Realty-Co/about">ABOUT</a></li>
                         <div class="dropdown">
                             <li><a id="dropdown" class="dropbtn">SERVICES</a>
                                 <div id="myDropdown" class="dropdown-content">
                                     <ul>
-                                        <li><a href="/services#selling">Selling<a></li></a>
-                                        <li><a href="/services#buying">Buying</a></li></a>
-                                        <li><a href="/services#loan">Home Loan</a></li>
+                                        <li><a href="/805-Realty-Co/services#selling">Selling<a></li></a>
+                                        <li><a href="/805-Realty-Co/services#buying">Buying</a></li></a>
+                                        <li><a href="/805-Realty-Co/services#loan">Home Loan</a></li>
                                     </ul>
                                 </div>
                             </li>
                         </div>
-                        <li><a href="/contact">CONTACT</a></li>
-                        <li><a href="/faq">FAQ</a></li>
+                        <li><a href="/805-Realty-Co/contact">CONTACT</a></li>
+                        <li><a href="/805-Realty-Co/faq">FAQ</a></li>
                     </ul>
                     <ul class="nav-soc-med">
                         <li>
