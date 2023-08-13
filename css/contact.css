@@ -121,13 +121,9 @@
     .contact-left {
         padding-right: 3rem;
     }
-
-    .contact-image-img {
-        width: 412px;
-   }
 }
 
-@media only screen and (orientation:portrait) and (max-width: 991px) {   
+@media only screen and (max-width: 991px) {   
     .contact-info {
         flex-direction: column;
    }
@@ -158,21 +154,18 @@
     .contact-bottom {
         padding-bottom: 6rem;
     }
-}
 
-@media only screen and (orientation:landscape) and (max-width: 991px) {   
     .container-header {
-       margin: 0 82px;
-   }
-
-    .contactpg-phone {
-        display: flex;
+        margin: 0 82px;
     }
-
-    .contactpg-skype {
-        display: none;
-    }
-
+ 
+     .contactpg-phone {
+         display: flex;
+     }
+ 
+     .contactpg-skype {
+         display: none;
+     }
 }
 
 @media only screen and (max-width: 576px) {
@@ -202,6 +195,7 @@
     .contact-image-img {
         display: flex;
         width: 100%;
+        max-width: 767px;
     }
 
     .contact-tablet {
