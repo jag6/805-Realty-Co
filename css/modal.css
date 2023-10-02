@@ -24,7 +24,7 @@
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, .5);
-    z-index: 4;
+    z-index: 99999;
 }
 
 #modal-content {
@@ -41,7 +41,6 @@
     color: #fff;
     padding: 1rem;
     text-align: center;
-    text-transform: uppercase;
 }
 
 .close-modal {
@@ -62,7 +61,6 @@
     color: #fff;
     padding: 15px 30px;
     text-align: center;
-    text-transform: uppercase;
 }
 
 #modal-body {
@@ -94,17 +92,23 @@
 
 .form-group input, textarea {
     width: 100%;
+    font-size: 16px;
+    line-height: 24px;
     padding: 2px 20px;
     padding-bottom: 5px;
     margin-bottom: 1rem;
     border: none;
-    border-radius: none;
+    border-radius: 5px;
     display: block;
-    font-size: 16px;
+}
+
+#name:focus {
+    outline: 2px solid #565859;
 }
 
 input[type='submit'] {
     font-size: 24px;
+    line-height: 32px;
     width: 90%;
     display: flex;
     margin: 0 auto;
